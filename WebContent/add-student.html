@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>إضافة طالب</title>
+
+    <link rel="stylesheet"
+          href="css/style.css?v=3">
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <div class="brand">
+
+                <h3
+                    data-ar="نظام إدارة الطلاب والمقررات"
+                    data-en="Student & Course Management System">
+
+                    نظام إدارة الطلاب والمقررات
+
+                </h3>
+
+
+                <span
+                    data-ar="إضافة طالب"
+                    data-en="Add Student">
+
+                    إضافة طالب
+
+                </span>
+
+            </div>
+
+
+            <button
+                id="languageBtn"
+                class="language-btn">
+
+                English
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <div class="page-header-content">
+
+            <div>
+
+                <span
+                    data-ar="إدارة النظام"
+                    data-en="System Management">
+
+                    إدارة النظام
+
+                </span>
+
+
+                <h1
+                    data-ar="إضافة طالب"
+                    data-en="Add Student">
+
+                    إضافة طالب
+
+                </h1>
+
+
+                <p
+                    data-ar="أدخل بيانات الطالب لإضافته إلى النظام."
+                    data-en="Enter the student information to add a new student.">
+
+                    أدخل بيانات الطالب لإضافته إلى النظام.
+
+                </p>
+
+            </div>
+
+
+            <div class="page-header-actions">
+
+                <a
+                    href="students.html"
+                    class="back-button">
+
+                    <span
+                        data-ar="العودة للطلاب"
+                        data-en="Back to Students">
+
+                        العودة للطلاب
+
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Add Student Form -->
+
+    <main class="students-container">
+
+        <section class="content-card add-form-card">
+
+
+            <div class="section-title">
+
+                <div>
+
+                    <h2
+                        data-ar="بيانات الطالب"
+                        data-en="Student Information">
+
+                        بيانات الطالب
+
+                    </h2>
+
+
+                    <span
+                        data-ar="أدخل جميع البيانات المطلوبة"
+                        data-en="Enter all required information">
+
+                        أدخل جميع البيانات المطلوبة
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <form
+                id="studentForm"
+                action="addStudent"
+                method="post">
+
+
+                <!-- Student Name -->
+
+                <div class="form-group">
+
+                    <label
+                        for="studentName"
+                        data-ar="اسم الطالب"
+                        data-en="Student Name">
+
+                        اسم الطالب
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        name="name"
+                        required
+                        data-placeholder-ar="أدخل اسم الطالب"
+                        data-placeholder-en="Enter student name"
+                        placeholder="أدخل اسم الطالب">
+
+                </div>
+
+
+
+                <!-- National ID -->
+
+                <div class="form-group">
+
+                    <label
+                        for="nationalId"
+                        data-ar="رقم الهوية الوطنية"
+                        data-en="National ID">
+
+                        رقم الهوية الوطنية
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="nationalId"
+                        name="nationalId"
+                        maxlength="10"
+                        inputmode="numeric"
+                        required
+                        data-placeholder-ar="أدخل رقم الهوية المكون من 10 أرقام"
+                        data-placeholder-en="Enter 10-digit national ID"
+                        placeholder="أدخل رقم الهوية المكون من 10 أرقام">
+
+                </div>
+
+
+
+                <!-- Age -->
+
+                <div class="form-group">
+
+                    <label
+                        for="studentAge"
+                        data-ar="العمر"
+                        data-en="Age">
+
+                        العمر
+
+                    </label>
+
+
+                    <input
+                        type="number"
+                        id="studentAge"
+                        name="age"
+                        min="1"
+                        required
+                        data-placeholder-ar="أدخل عمر الطالب"
+                        data-placeholder-en="Enter student age"
+                        placeholder="أدخل عمر الطالب">
+
+                </div>
+
+
+
+                <!-- Grade -->
+
+                <div class="form-group">
+
+                    <label
+                        for="studentGrade"
+                        data-ar="الدرجة"
+                        data-en="Grade">
+
+                        الدرجة
+
+                    </label>
+
+
+                    <input
+                        type="number"
+                        id="studentGrade"
+                        name="grade"
+                        min="0"
+                        max="100"
+                        step="0.01"
+                        required
+                        data-placeholder-ar="أدخل الدرجة من 0 إلى 100"
+                        data-placeholder-en="Enter grade from 0 to 100"
+                        placeholder="أدخل الدرجة من 0 إلى 100">
+
+                </div>
+
+
+
+                <!-- Buttons -->
+
+                <div class="form-actions">
+
+                    <a
+                        href="students.html"
+                        class="back-button">
+
+                        <span
+                            data-ar="إلغاء"
+                            data-en="Cancel">
+
+                            إلغاء
+
+                        </span>
+
+                    </a>
+
+
+                    <button
+                        type="submit"
+                        class="primary-button">
+
+                        <span
+                            data-ar="حفظ الطالب"
+                            data-en="Save Student">
+
+                            حفظ الطالب
+
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <span
+            data-ar="نظام إدارة الطلاب والمقررات © 2026"
+            data-en="Student & Course Management System © 2026">
+
+            نظام إدارة الطلاب والمقررات © 2026
+
+        </span>
+
+    </footer>
+
+
+
+    <script src="js/language.js?v=3"></script>
+
+
+</body>
+
+</html>
