@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>إدارة الطلاب</title>
+
+    <link rel="stylesheet" href="css/style.css?v=2">
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <div class="brand">
+
+                <h3 data-ar="نظام إدارة الطلاب والمقررات"
+                    data-en="Student & Course Management System">
+
+                    نظام إدارة الطلاب والمقررات
+
+                </h3>
+
+                <span data-ar="إدارة الطلاب"
+                      data-en="Student Management">
+
+                    إدارة الطلاب
+
+                </span>
+
+            </div>
+
+
+            <button id="languageBtn" class="language-btn">
+
+                English
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <div class="page-header-content">
+
+            <div>
+
+                <span data-ar="إدارة النظام"
+                      data-en="System Management">
+
+                    إدارة النظام
+
+                </span>
+
+                <h1 data-ar="إدارة الطلاب"
+                    data-en="Student Management">
+
+                    إدارة الطلاب
+
+                </h1>
+
+                <p data-ar="إضافة وتعديل والبحث عن بيانات الطلاب."
+                   data-en="Add, update, and search student information.">
+
+                    إضافة وتعديل والبحث عن بيانات الطلاب.
+
+                </p>
+
+            </div>
+
+
+            <a href="index.html" class="back-button">
+
+                <span data-ar="العودة للرئيسية"
+                      data-en="Back to Home">
+
+                    العودة للرئيسية
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Students Content -->
+
+    <main class="students-container">
+
+
+        <!-- Add Student -->
+
+        <section class="add-student-card">
+
+            <div class="add-student-info">
+
+                <div>
+
+                    <h2 data-ar="إضافة طالب جديد"
+                        data-en="Add New Student">
+
+                        إضافة طالب جديد
+
+                    </h2>
+
+                    <span data-ar="قم بإضافة طالب جديد إلى النظام"
+                          data-en="Add a new student to the system">
+
+                        قم بإضافة طالب جديد إلى النظام
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a href="add-student.html" class="primary-button">
+
+                <span class="plus">+</span>
+
+                <span data-ar="إضافة طالب"
+                      data-en="Add Student">
+
+                    إضافة طالب
+
+                </span>
+
+            </a>
+
+        </section>
+
+
+
+        <!-- Search -->
+
+        <section class="content-card search-card">
+
+            <div class="section-title">
+
+                <div>
+
+                    <h2 data-ar="البحث عن طالب"
+                        data-en="Search Student">
+
+                        البحث عن طالب
+
+                    </h2>
+
+                    <span data-ar="ابحث باستخدام اسم الطالب"
+                          data-en="Search by student name">
+
+                        ابحث باستخدام اسم الطالب
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="studentSearch"
+                    data-placeholder-ar="ابحث عن اسم الطالب"
+                    data-placeholder-en="Search student name"
+                    placeholder="ابحث عن اسم الطالب"
+                >
+
+
+                <button class="search-button">
+
+                    <span data-ar="بحث"
+                          data-en="Search">
+
+                        بحث
+
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Students Table -->
+
+        <section class="content-card table-card">
+
+            <div class="section-title">
+
+                <div>
+
+                    <h2 data-ar="قائمة الطلاب"
+                        data-en="Students List">
+
+                        قائمة الطلاب
+
+                    </h2>
+
+                    <span data-ar="بيانات الطلاب المسجلة في النظام"
+                          data-en="Registered students in the system">
+
+                        بيانات الطلاب المسجلة في النظام
+
+                    </span>
+
+                </div>
+
+
+                <span class="record-count"
+                      data-ar="الطلاب"
+                      data-en="Students">
+
+                    الطلاب
+
+                </span>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th data-ar="الرقم"
+                                data-en="ID">
+
+                                الرقم
+
+                            </th>
+
+                            <th data-ar="اسم الطالب"
+                                data-en="Student Name">
+
+                                اسم الطالب
+
+                            </th>
+
+                            <th data-ar="رقم الهوية"
+                                data-en="National ID">
+
+                                رقم الهوية
+
+                            </th>
+
+                            <th data-ar="العمر"
+                                data-en="Age">
+
+                                العمر
+
+                            </th>
+
+                            <th data-ar="الدرجة"
+                                data-en="Grade">
+
+                                الدرجة
+
+                            </th>
+
+                            <th data-ar="الإجراءات"
+                                data-en="Actions">
+
+                                الإجراءات
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>1</td>
+
+                            <td class="student-name">
+
+                                Wadha
+
+                            </td>
+
+                            <td>
+
+                                1234567890
+
+                            </td>
+
+                            <td>
+
+                                22
+
+                            </td>
+
+                            <td>
+
+                                <span class="grade-badge excellent">
+
+                                    95
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <div class="actions">
+
+                                    <button class="action-btn edit"
+                                            data-ar="تعديل"
+                                            data-en="Edit">
+
+                                        تعديل
+
+                                    </button>
+
+
+                                    <button class="action-btn delete"
+                                            data-ar="حذف"
+                                            data-en="Delete">
+
+                                        حذف
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>2</td>
+
+                            <td class="student-name">
+
+                                Shahad
+
+                            </td>
+
+                            <td>
+
+                                2234567890
+
+                            </td>
+
+                            <td>
+
+                                21
+
+                            </td>
+
+                            <td>
+
+                                <span class="grade-badge good">
+
+                                    88.5
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <div class="actions">
+
+                                    <button class="action-btn edit"
+                                            data-ar="تعديل"
+                                            data-en="Edit">
+
+                                        تعديل
+
+                                    </button>
+
+
+                                    <button class="action-btn delete"
+                                            data-ar="حذف"
+                                            data-en="Delete">
+
+                                        حذف
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <span data-ar="نظام إدارة الطلاب والمقررات © 2026"
+              data-en="Student & Course Management System © 2026">
+
+            نظام إدارة الطلاب والمقررات © 2026
+
+        </span>
+
+    </footer>
+
+
+
+    <!-- Language -->
+
+    <script src="js/language.js?v=2"></script>
+
+
+
+    <!-- Success Message -->
+
+    <script>
+
+        const params =
+            new URLSearchParams(
+                window.location.search
+            );
+
+
+        if (params.get("success") === "true") {
+
+            const language =
+                localStorage.getItem(
+                    "selectedLanguage"
+                ) || "ar";
+
+
+            if (language === "ar") {
+
+                alert(
+                    "تم إضافة الطالب بنجاح"
+                );
+
+            } else {
+
+                alert(
+                    "Student added successfully"
+                );
+            }
+
+
+            // Remove success=true from URL
+
+            window.history.replaceState(
+                {},
+                document.title,
+                "students.html"
+            );
+        }
+
+    </script>
+
+
+</body>
+
+</html>
