@@ -1,0 +1,1269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #f7f8ff;
+    color: #17183f;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 82px;
+    background: #ffffff;
+    border-bottom: 1px solid #ececff;
+}
+
+.header-container {
+    width: 86%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    text-align: right;
+}
+
+.brand h3 {
+    font-size: 19px;
+    color: #17183f;
+    font-weight: 700;
+}
+
+.brand span {
+    display: block;
+    margin-top: 4px;
+    color: #9296aa;
+    font-size: 12px;
+}
+
+.language-btn {
+    border: 1px solid #dedcff;
+    background: #ffffff;
+    color: #543be5;
+
+    padding: 10px 20px;
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.language-btn:hover {
+    background: #f4f1ff;
+}
+
+
+/* =========================
+   HOME HERO
+========================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 320px;
+
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(
+        120deg,
+        #eeebff,
+        #f8f7ff 55%,
+        #ffffff
+    );
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    left: -230px;
+    top: -250px;
+
+    border: 65px solid rgba(105, 78, 230, 0.07);
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    right: -120px;
+    bottom: -160px;
+
+    background: rgba(105, 78, 230, 0.06);
+}
+
+.hero-content {
+    width: 86%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text {
+    width: 100%;
+    text-align: right;
+}
+
+.hero-text span {
+    display: block;
+
+    color: #6946e8;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    margin-bottom: 14px;
+}
+
+.hero-text h1 {
+    color: #15163e;
+
+    font-size: 48px;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    max-width: 750px;
+}
+
+
+/* =========================
+   HOME CARDS
+========================= */
+
+.management {
+    width: 86%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 60px 0 70px;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 28px;
+
+    direction: rtl;
+}
+
+.management-card {
+    min-height: 330px;
+
+    background: #ffffff;
+
+    border: 1px solid #e7e7f3;
+
+    border-radius: 22px;
+
+    padding: 30px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 32px rgba(54, 55, 100, 0.07);
+
+    transition: 0.25s;
+}
+
+.management-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 40px rgba(54, 55, 100, 0.12);
+}
+
+.management-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    left: -80px;
+    bottom: -100px;
+}
+
+.student-card::after {
+    background: #eaf0ff;
+}
+
+.course-card::after {
+    background: #f0e8ff;
+}
+
+
+/* =========================
+   CARD TOP
+========================= */
+
+.card-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.card-number {
+    color: #a0a5b9;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-icon {
+    width: 66px;
+    height: 66px;
+
+    border-radius: 17px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.student-card .card-icon {
+    background: #edf2ff;
+}
+
+.course-card .card-icon {
+    background: #f2eaff;
+}
+
+.card-icon svg {
+    width: 35px;
+    height: 35px;
+
+    fill: #4937e5;
+}
+
+.course-card .card-icon svg {
+    fill: #7044e8;
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.card-content {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 28px;
+
+    text-align: right;
+}
+
+.card-content h2 {
+    color: #15163e;
+
+    font-size: 27px;
+
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    color: #707890;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CARD BUTTON
+========================= */
+
+.card-button {
+    position: absolute;
+
+    z-index: 3;
+
+    bottom: 27px;
+
+    left: 30px;
+    right: 30px;
+
+    height: 55px;
+
+    border-radius: 13px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+.student-button {
+    background: linear-gradient(
+        100deg,
+        #3157ed,
+        #4b68f2
+    );
+}
+
+.course-button {
+    background: linear-gradient(
+        100deg,
+        #5435dd,
+        #7447e8
+    );
+}
+
+.card-button:hover {
+    transform: translateY(-2px);
+}
+
+.arrow {
+    font-size: 21px;
+}
+
+
+/* =========================
+   STUDENT PAGE HEADER
+========================= */
+
+.page-header {
+    background: linear-gradient(
+        120deg,
+        #eeebff,
+        #f8f7ff,
+        #ffffff
+    );
+
+    border-bottom: 1px solid #e9e7f5;
+
+    padding: 45px 0;
+}
+
+.page-header-content {
+    width: 86%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-header span {
+    color: #6946e8;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.page-header h1 {
+    margin-top: 8px;
+
+    color: #15163e;
+
+    font-size: 38px;
+}
+
+.page-header p {
+    margin-top: 8px;
+
+    color: #707890;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   PRIMARY BUTTON
+========================= */
+
+.primary-button {
+    height: 52px;
+
+    min-width: 150px;
+
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        100deg,
+        #5435dd,
+        #7447e8
+    );
+
+    color: #ffffff !important;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 8px 20px rgba(84, 53, 221, 0.18);
+
+    transition: 0.25s;
+
+    border: none;
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+}
+
+.plus {
+    font-size: 22px;
+    line-height: 1;
+}
+
+
+/* =========================
+   STUDENTS CONTAINER
+========================= */
+
+.students-container {
+    width: 86%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 40px 0 70px;
+}
+
+
+/* =========================
+   CONTENT CARD
+========================= */
+
+.content-card {
+    background: #ffffff;
+
+    border: 1px solid #e7e7f3;
+
+    border-radius: 20px;
+
+    padding: 28px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 10px 28px rgba(54, 55, 100, 0.06);
+}
+
+.section-title {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+}
+
+.section-title h2 {
+    color: #17183f;
+
+    font-size: 21px;
+
+    margin-bottom: 5px;
+}
+
+.section-title span {
+    color: #9296aa;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box {
+    display: flex;
+
+    gap: 12px;
+}
+
+.search-box input {
+    flex: 1;
+
+    height: 52px;
+
+    border: 1px solid #e0e1ed;
+
+    border-radius: 12px;
+
+    padding: 0 16px;
+
+    outline: none;
+
+    color: #30324f;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.search-box input:focus {
+    border-color: #7556e8;
+
+    box-shadow:
+        0 0 0 3px rgba(117, 86, 232, 0.08);
+}
+
+
+/* =========================
+   SEARCH BUTTON
+========================= */
+
+.search-button {
+    height: 52px;
+
+    min-width: 150px;
+
+    padding: 0 22px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        100deg,
+        #5435dd,
+        #7447e8
+    );
+
+    color: #ffffff !important;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(84, 53, 221, 0.18);
+
+    transition: 0.25s;
+}
+
+.search-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 750px;
+}
+
+thead {
+    background: #f7f6fc;
+}
+
+th {
+    padding: 15px 14px;
+
+    color: #686c84;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-align: right;
+
+    border-bottom: 1px solid #e9e9f2;
+}
+
+td {
+    padding: 17px 14px;
+
+    color: #555a72;
+
+    font-size: 13px;
+
+    text-align: right;
+
+    border-bottom: 1px solid #eeeef5;
+}
+
+tbody tr {
+    transition: 0.2s;
+}
+
+tbody tr:hover {
+    background: #faf9ff;
+}
+
+.student-name {
+    color: #25264a;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   GRADE
+========================= */
+
+.grade-badge {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 52px;
+
+    padding: 6px 10px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.grade-badge.excellent {
+    background: #e9f7f0;
+
+    color: #24805a;
+}
+
+.grade-badge.good {
+    background: #edf1ff;
+
+    color: #4963ce;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.action-btn {
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 7px 12px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.action-btn.edit {
+    background: #eeeaff;
+
+    color: #5a3bdd;
+}
+
+.action-btn.delete {
+    background: #fff0f1;
+
+    color: #d14b58;
+}
+
+.action-btn:hover {
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   ENGLISH
+========================= */
+
+html[dir="ltr"] .brand {
+    text-align: left;
+}
+
+html[dir="ltr"] .hero-text {
+    text-align: left;
+}
+
+html[dir="ltr"] .card-content {
+    text-align: left;
+}
+
+html[dir="ltr"] .cards {
+    direction: ltr;
+}
+
+html[dir="ltr"] .page-header-content {
+    direction: ltr;
+}
+
+html[dir="ltr"] .page-header h1,
+html[dir="ltr"] .page-header p {
+    text-align: left;
+}
+
+html[dir="ltr"] th,
+html[dir="ltr"] td {
+    text-align: left;
+}
+
+html[dir="ltr"] .actions {
+    justify-content: flex-start;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 22px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #eeeeff;
+
+    text-align: center;
+
+    color: #969bb0;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   PAGE HEADER ACTIONS
+========================= */
+
+.page-header-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-button {
+    height: 52px;
+
+    padding: 0 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #cfc8ff;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    color: #543be5 !important;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+.back-button span {
+    color: #543be5 !important;
+}
+
+.back-button:hover {
+    background: #f4f1ff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   ADD STUDENT CARD
+========================= */
+
+.add-student-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e7e7f3;
+
+    border-radius: 20px;
+
+    padding: 22px 28px;
+
+    margin-bottom: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow:
+        0 10px 28px rgba(54, 55, 100, 0.06);
+
+    direction: rtl;
+}
+
+
+/* =========================
+   ADD STUDENT INFO
+========================= */
+
+.add-student-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+}
+
+.add-student-icon {
+    width: 56px;
+
+    height: 56px;
+
+    border-radius: 15px;
+
+    background: #f0ebff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.add-student-icon svg {
+    width: 30px;
+
+    height: 30px;
+
+    fill: #543be5;
+}
+
+.add-student-info h2 {
+    color: #17183f;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.add-student-info span {
+    color: #9296aa;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   ADD STUDENT BUTTON
+========================= */
+
+.add-student-card .primary-button {
+    min-width: 150px;
+
+    height: 52px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   ENGLISH ADD STUDENT
+========================= */
+
+html[dir="ltr"] .add-student-card {
+    direction: ltr;
+}
+
+html[dir="ltr"] .add-student-info {
+    text-align: left;
+}
+
+
+/* =========================
+   HOME RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   STUDENT PAGE RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .page-header-content {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 25px;
+    }
+
+    .primary-button {
+        width: 100%;
+    }
+
+    .students-container {
+        width: 90%;
+    }
+
+    .content-card {
+        padding: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-button {
+        width: 100%;
+        height: 52px;
+    }
+
+    .add-student-card {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 20px;
+    }
+
+    .add-student-card .primary-button {
+        width: 100%;
+    }
+
+    .back-button {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   SMALL SCREEN
+========================= */
+
+@media (max-width: 500px) {
+
+    .header {
+        height: auto;
+
+        padding: 15px 0;
+    }
+
+    .brand h3 {
+        font-size: 15px;
+    }
+
+    .brand span {
+        font-size: 10px;
+    }
+
+    .language-btn {
+        padding: 8px 13px;
+
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 270px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text span {
+        font-size: 14px;
+    }
+
+    .management-card {
+        min-height: 320px;
+
+        padding: 24px;
+    }
+
+    .card-button {
+        left: 24px;
+
+        right: 24px;
+    }
+
+    .primary-button,
+    .primary-button span {
+        color: #ffffff !important;
+    }
+}
+/* =========================
+   ADD STUDENT FORM
+========================= */
+
+.add-form-card {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #17183f;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   FORM INPUT
+========================= */
+
+.form-group input {
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 16px;
+
+    border: 1px solid #e0e1ed;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    color: #30324f;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #7556e8;
+
+    box-shadow:
+        0 0 0 3px rgba(117, 86, 232, 0.08);
+}
+
+
+/* =========================
+   FORM ACTIONS
+========================= */
+
+.form-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+
+/* نفس حجم زر الحفظ */
+
+.form-actions .primary-button,
+.form-actions .back-button {
+    width: 150px;
+
+    height: 52px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   ENGLISH
+========================= */
+
+html[dir="ltr"] .add-form-card {
+    direction: ltr;
+}
+
+html[dir="ltr"] .form-group {
+    text-align: left;
+}
+
+html[dir="ltr"] .form-actions {
+    justify-content: flex-start;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .add-form-card {
+        width: 100%;
+    }
+
+    .form-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .form-actions .primary-button,
+    .form-actions .back-button {
+        width: 100%;
+    }
+
+}
+.search-result {
+    margin-top: 20px;
+    padding: 22px;
+    border-radius: 12px;
+    background: #f7f5ff;
+    color: #30324f;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.search-result p {
+    margin: 0;
+}
+.student-result-details {
+    padding: 10px 0;
+    color: #30324f;
+    font-size: 16px;
+    line-height: 2.2;
+    text-align: right;
+}

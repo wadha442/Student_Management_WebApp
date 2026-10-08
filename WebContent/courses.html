@@ -9,7 +9,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>إدارة الطلاب</title>
+    <title>إدارة المقررات</title>
 
     <link rel="stylesheet"
           href="css/style.css?v=2">
@@ -35,10 +35,10 @@
 
                 </h3>
 
-                <span data-ar="إدارة الطلاب"
-                      data-en="Student Management">
+                <span data-ar="إدارة المقررات"
+                      data-en="Course Management">
 
-                    إدارة الطلاب
+                    إدارة المقررات
 
                 </span>
 
@@ -72,17 +72,17 @@
 
                 </span>
 
-                <h1 data-ar="إدارة الطلاب"
-                    data-en="Student Management">
+                <h1 data-ar="إدارة المقررات"
+                    data-en="Course Management">
 
-                    إدارة الطلاب
+                    إدارة المقررات
 
                 </h1>
 
-                <p data-ar="إضافة وتعديل والبحث عن بيانات الطلاب."
-                   data-en="Add, update, and search student information.">
+                <p data-ar="إضافة وتعديل والبحث عن بيانات المقررات."
+                   data-en="Add, update, and search course information.">
 
-                    إضافة وتعديل والبحث عن بيانات الطلاب.
+                    إضافة وتعديل والبحث عن بيانات المقررات.
 
                 </p>
 
@@ -106,12 +106,12 @@
     </section>
 
 
-    <!-- Students Content -->
+    <!-- Courses Content -->
 
     <main class="students-container">
 
 
-        <!-- Add Student -->
+        <!-- Add Course -->
 
         <section class="add-student-card">
 
@@ -119,17 +119,17 @@
 
                 <div>
 
-                    <h2 data-ar="إضافة طالب جديد"
-                        data-en="Add New Student">
+                    <h2 data-ar="إضافة مقرر جديد"
+                        data-en="Add New Course">
 
-                        إضافة طالب جديد
+                        إضافة مقرر جديد
 
                     </h2>
 
-                    <span data-ar="قم بإضافة طالب جديد إلى النظام"
-                          data-en="Add a new student to the system">
+                    <span data-ar="قم بإضافة مقرر جديد إلى النظام"
+                          data-en="Add a new course to the system">
 
-                        قم بإضافة طالب جديد إلى النظام
+                        قم بإضافة مقرر جديد إلى النظام
 
                     </span>
 
@@ -138,15 +138,15 @@
             </div>
 
 
-            <a href="add-student.html"
+            <a href="add-course.html"
                class="primary-button">
 
                 <span class="plus">+</span>
 
-                <span data-ar="إضافة طالب"
-                      data-en="Add Student">
+                <span data-ar="إضافة مقرر"
+                      data-en="Add Course">
 
-                    إضافة طالب
+                    إضافة مقرر
 
                 </span>
 
@@ -163,17 +163,17 @@
 
                 <div>
 
-                    <h2 data-ar="البحث عن طالب"
-                        data-en="Search Student">
+                    <h2 data-ar="البحث عن مقرر"
+                        data-en="Search Course">
 
-                        البحث عن طالب
+                        البحث عن مقرر
 
                     </h2>
 
-                    <span data-ar="ابحث باستخدام اسم الطالب"
-                          data-en="Search by student name">
+                    <span data-ar="ابحث باستخدام اسم المقرر"
+                          data-en="Search by course name">
 
-                        ابحث باستخدام اسم الطالب
+                        ابحث باستخدام اسم المقرر
 
                     </span>
 
@@ -185,29 +185,17 @@
             <!-- Search Form -->
 
             <form class="search-box"
-                  action="searchStudent"
-                  method="get"
-                  onsubmit="document.getElementById('selectedLanguage').value = localStorage.getItem('selectedLanguage') || 'ar';">
-
+                  action="searchCourse"
+                  method="get">
 
                 <input
                     type="text"
-                    id="studentSearch"
-                    name="studentName"
-                    data-placeholder-ar="ابحث عن اسم الطالب"
-                    data-placeholder-en="Search student name"
-                    placeholder="ابحث عن اسم الطالب"
+                    id="courseSearch"
+                    name="courseName"
+                    data-placeholder-ar="ابحث عن اسم المقرر"
+                    data-placeholder-en="Search course name"
+                    placeholder="ابحث عن اسم المقرر"
                     required
-                >
-
-
-                <!-- Current Language -->
-
-                <input
-                    type="hidden"
-                    id="selectedLanguage"
-                    name="language"
-                    value="ar"
                 >
 
 
@@ -228,7 +216,7 @@
         </section>
 
 
-        <!-- Students Table -->
+        <!-- Courses Table -->
 
         <section class="content-card table-card">
 
@@ -236,17 +224,17 @@
 
                 <div>
 
-                    <h2 data-ar="قائمة الطلاب"
-                        data-en="Students List">
+                    <h2 data-ar="قائمة المقررات"
+                        data-en="Courses List">
 
-                        قائمة الطلاب
+                        قائمة المقررات
 
                     </h2>
 
-                    <span data-ar="بيانات الطلاب المسجلة في النظام"
-                          data-en="Registered students in the system">
+                    <span data-ar="بيانات المقررات المسجلة في النظام"
+                          data-en="Registered courses in the system">
 
-                        بيانات الطلاب المسجلة في النظام
+                        بيانات المقررات المسجلة في النظام
 
                     </span>
 
@@ -255,10 +243,10 @@
 
                 <span class="record-count"
                       id="recordCount"
-                      data-ar="الطلاب"
-                      data-en="Students">
+                      data-ar="المقررات"
+                      data-en="Courses">
 
-                    الطلاب
+                    المقررات
 
                 </span>
 
@@ -281,34 +269,26 @@
                             </th>
 
 
-                            <th data-ar="اسم الطالب"
-                                data-en="Student Name">
+                            <th data-ar="اسم المقرر"
+                                data-en="Course Name">
 
-                                اسم الطالب
-
-                            </th>
-
-
-                            <th data-ar="رقم الهوية"
-                                data-en="National ID">
-
-                                رقم الهوية
+                                اسم المقرر
 
                             </th>
 
 
-                            <th data-ar="العمر"
-                                data-en="Age">
+                            <th data-ar="رمز المقرر"
+                                data-en="Course Code">
 
-                                العمر
+                                رمز المقرر
 
                             </th>
 
 
-                            <th data-ar="الدرجة"
-                                data-en="Grade">
+                            <th data-ar="الوصف"
+                                data-en="Description">
 
-                                الدرجة
+                                الوصف
 
                             </th>
 
@@ -325,10 +305,7 @@
                     </thead>
 
 
-                 
-
-                    <tbody id="studentsTableBody">
-
+                    <tbody id="coursesTableBody">
                     </tbody>
 
                 </table>
@@ -359,61 +336,14 @@
     <script src="js/language.js?v=2"></script>
 
 
-    <!-- Success Message -->
+    <!-- Show Courses -->
 
     <script>
 
-        // Get the parameters from the URL
-        const params =
-            new URLSearchParams(
-                window.location.search
-            );
-
-
-        // Check if the student was added successfully
-        if (params.get("success") === "true") {
-
-            // Get the current language
-            const language =
-                localStorage.getItem(
-                    "selectedLanguage"
-                ) || "ar";
-
-
-            // Show the message according to the language
-            if (language === "ar") {
-
-                alert(
-                    "تم إضافة الطالب بنجاح"
-                );
-
-            } else {
-
-                alert(
-                    "Student added successfully"
-                );
-            }
-
-
-            // Remove success=true from the URL
-            window.history.replaceState(
-                {},
-                document.title,
-                "students.html"
-            );
-        }
-
-    </script>
-
-
-    <!-- Show Students -->
-
-    <script>
-
-        // Get the tbody where students will be displayed
-        const studentsTableBody =
+        // Get the tbody where courses will be displayed
+        const coursesTableBody =
             document.getElementById(
-                "studentsTableBody"
+                "coursesTableBody"
             );
 
 
@@ -424,13 +354,11 @@
             );
 
 
-        // Send GET request to ShowStudentsServlet
-        //
-        // The Servlet will return JSON
-        fetch("showStudents")
+        // Send GET request to ShowCoursesServlet
+        fetch("showCourses")
 
 
-            // Convert the Response from JSON text
+            // Convert the Response from JSON
             // into JavaScript data
             .then(function(response) {
 
@@ -438,7 +366,7 @@
                 if (!response.ok) {
 
                     throw new Error(
-                        "Failed to load students"
+                        "Failed to load courses"
                     );
                 }
 
@@ -447,29 +375,28 @@
             })
 
 
-            // Receive the students list
-            .then(function(students) {
-
+            // Receive the courses list
+            .then(function(courses) {
 
                 // Remove any old rows
-                studentsTableBody.innerHTML = "";
+                coursesTableBody.innerHTML = "";
 
 
-                // Update the number of students
+                // Update the number of courses
                 recordCount.textContent =
-                    students.length
+                    courses.length
                     + " "
                     + (
                         localStorage.getItem(
                             "selectedLanguage"
                         ) === "en"
-                        ? "Students"
-                        : "الطلاب"
+                        ? "Courses"
+                        : "المقررات"
                     );
 
 
-                // Loop through all students
-                students.forEach(function(student) {
+                // Loop through all courses
+                courses.forEach(function(course) {
 
 
                     // Create a new table row
@@ -478,18 +405,18 @@
 
 
                     // =========================
-                    // Student ID
+                    // Course ID
                     // =========================
 
                     const idCell =
                         document.createElement("td");
 
                     idCell.textContent =
-                        student.id;
+                        course.id;
 
 
                     // =========================
-                    // Student Name
+                    // Course Name
                     // =========================
 
                     const nameCell =
@@ -499,56 +426,29 @@
                         "student-name";
 
                     nameCell.textContent =
-                        student.name;
+                        course.name;
 
 
                     // =========================
-                    // National ID
+                    // Course Code
                     // =========================
 
-                    const nationalIdCell =
+                    const codeCell =
                         document.createElement("td");
 
-                    nationalIdCell.textContent =
-                        student.nationalId;
+                    codeCell.textContent =
+                        course.courseCode;
 
 
                     // =========================
-                    // Age
+                    // Description
                     // =========================
 
-                    const ageCell =
+                    const descriptionCell =
                         document.createElement("td");
 
-                    ageCell.textContent =
-                        student.age;
-
-
-                    // =========================
-                    // Grade
-                    // =========================
-
-                    const gradeCell =
-                        document.createElement("td");
-
-
-                    // Create grade badge
-                    const gradeBadge =
-                        document.createElement("span");
-
-
-                    gradeBadge.className =
-                        "grade-badge";
-
-
-                    gradeBadge.textContent =
-                        student.grade;
-
-
-                    // Add badge to grade cell
-                    gradeCell.appendChild(
-                        gradeBadge
-                    );
+                    descriptionCell.textContent =
+                        course.description;
 
 
                     // =========================
@@ -562,7 +462,6 @@
                     const actions =
                         document.createElement("div");
 
-
                     actions.className =
                         "actions";
 
@@ -574,22 +473,18 @@
                     const editButton =
                         document.createElement("button");
 
-
                     editButton.className =
                         "action-btn edit";
-
 
                     editButton.setAttribute(
                         "data-ar",
                         "تعديل"
                     );
 
-
                     editButton.setAttribute(
                         "data-en",
                         "Edit"
                     );
-
 
                     editButton.textContent =
                         localStorage.getItem(
@@ -606,22 +501,18 @@
                     const deleteButton =
                         document.createElement("button");
 
-
                     deleteButton.className =
                         "action-btn delete";
-
 
                     deleteButton.setAttribute(
                         "data-ar",
                         "حذف"
                     );
 
-
                     deleteButton.setAttribute(
                         "data-en",
                         "Delete"
                     );
-
 
                     deleteButton.textContent =
                         localStorage.getItem(
@@ -660,15 +551,11 @@
                     );
 
                     row.appendChild(
-                        nationalIdCell
+                        codeCell
                     );
 
                     row.appendChild(
-                        ageCell
-                    );
-
-                    row.appendChild(
-                        gradeCell
+                        descriptionCell
                     );
 
                     row.appendChild(
@@ -677,7 +564,7 @@
 
 
                     // Add row to table
-                    studentsTableBody.appendChild(
+                    coursesTableBody.appendChild(
                         row
                     );
 
@@ -693,7 +580,7 @@
             .catch(function(error) {
 
                 console.error(
-                    "Failed to load students:",
+                    "Failed to load courses:",
                     error
                 );
 
