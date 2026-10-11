@@ -297,11 +297,12 @@ public class StudentDBDAOImpl {
             throws SQLException {
 
         String sql =
-                "UPDATE Student "
-                + "SET Student_name = ?, "
-                + "Student_age = ?, "
-                + "Student_grade = ? "
-                + "WHERE national_id = ?";
+        		   "UPDATE Student "
+        		            + "SET national_id = ?, "
+        		            + "Student_name = ?, "
+        		            + "Student_age = ?, "
+        		            + "Student_grade = ? "
+        		            + "WHERE national_id = ?";
 
 
         try (
@@ -312,26 +313,11 @@ public class StudentDBDAOImpl {
                     connection.prepareStatement(sql)
         ) {
 
-            statement.setString(
-                    1,
-                    student.getName()
-            );
-
-            statement.setInt(
-                    2,
-                    student.getAge()
-            );
-
-            statement.setDouble(
-                    3,
-                    student.getGrade()
-            );
-
-            statement.setString(
-                    4,
-                    nationalId
-            );
-
+        	  statement.setString(1, student.getNationalId());
+              statement.setString(2, student.getName());
+              statement.setInt(3, student.getAge());
+              statement.setDouble(4, student.getGrade());
+              statement.setString(5, nationalId);
 
             int rowsAffected =
                     statement.executeUpdate();
