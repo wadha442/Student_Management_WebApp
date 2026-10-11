@@ -1,194 +1,137 @@
+```html
 <!DOCTYPE html>
-
 <html lang="ar" dir="rtl">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>إدارة الطلاب</title>
 
-    <link rel="stylesheet"
-          href="css/style.css?v=2">
-
+    <link rel="stylesheet" href="css/style.css?v=2">
 </head>
-
 
 <body>
 
-
     <!-- Header -->
-
     <header class="header">
-
         <div class="header-container">
 
             <div class="brand">
-
-                <h3 data-ar="نظام إدارة الطلاب والمقررات"
+                <h3
+                    data-ar="نظام إدارة الطلاب والمقررات"
                     data-en="Student & Course Management System">
-
                     نظام إدارة الطلاب والمقررات
-
                 </h3>
 
-                <span data-ar="إدارة الطلاب"
-                      data-en="Student Management">
-
+                <span
+                    data-ar="إدارة الطلاب"
+                    data-en="Student Management">
                     إدارة الطلاب
-
                 </span>
-
             </div>
 
-
-            <button id="languageBtn"
-                    class="language-btn">
-
+            <button id="languageBtn" class="language-btn">
                 English
-
             </button>
 
         </div>
-
     </header>
 
-
     <!-- Page Header -->
-
     <section class="page-header">
-
         <div class="page-header-content">
 
             <div>
-
-                <span data-ar="إدارة النظام"
-                      data-en="System Management">
-
+                <span
+                    data-ar="إدارة النظام"
+                    data-en="System Management">
                     إدارة النظام
-
                 </span>
 
-                <h1 data-ar="إدارة الطلاب"
+                <h1
+                    data-ar="إدارة الطلاب"
                     data-en="Student Management">
-
                     إدارة الطلاب
-
                 </h1>
 
-                <p data-ar="إضافة وتعديل والبحث عن بيانات الطلاب."
-                   data-en="Add, update, and search student information.">
-
+                <p
+                    data-ar="إضافة وتعديل والبحث عن بيانات الطلاب."
+                    data-en="Add, update, and search student information.">
                     إضافة وتعديل والبحث عن بيانات الطلاب.
-
                 </p>
-
             </div>
 
-
-            <a href="index.html"
-               class="back-button">
-
-                <span data-ar="العودة للرئيسية"
-                      data-en="Back to Home">
-
+            <a href="index.html" class="back-button">
+                <span
+                    data-ar="العودة للرئيسية"
+                    data-en="Back to Home">
                     العودة للرئيسية
-
                 </span>
-
             </a>
 
         </div>
-
     </section>
 
-
     <!-- Students Content -->
-
     <main class="students-container">
 
-
         <!-- Add Student -->
-
         <section class="add-student-card">
 
             <div class="add-student-info">
-
                 <div>
-
-                    <h2 data-ar="إضافة طالب جديد"
+                    <h2
+                        data-ar="إضافة طالب جديد"
                         data-en="Add New Student">
-
                         إضافة طالب جديد
-
                     </h2>
 
-                    <span data-ar="قم بإضافة طالب جديد إلى النظام"
-                          data-en="Add a new student to the system">
-
+                    <span
+                        data-ar="قم بإضافة طالب جديد إلى النظام"
+                        data-en="Add a new student to the system">
                         قم بإضافة طالب جديد إلى النظام
-
                     </span>
-
                 </div>
-
             </div>
 
-
-            <a href="add-student.html"
-               class="primary-button">
-
+            <a href="add-student.html" class="primary-button">
                 <span class="plus">+</span>
 
-                <span data-ar="إضافة طالب"
-                      data-en="Add Student">
-
+                <span
+                    data-ar="إضافة طالب"
+                    data-en="Add Student">
                     إضافة طالب
-
                 </span>
-
             </a>
 
         </section>
 
-
         <!-- Search -->
-
         <section class="content-card search-card">
 
             <div class="section-title">
-
                 <div>
-
-                    <h2 data-ar="البحث عن طالب"
+                    <h2
+                        data-ar="البحث عن طالب"
                         data-en="Search Student">
-
                         البحث عن طالب
-
                     </h2>
 
-                    <span data-ar="ابحث باستخدام اسم الطالب"
-                          data-en="Search by student name">
-
+                    <span
+                        data-ar="ابحث باستخدام اسم الطالب"
+                        data-en="Search by student name">
                         ابحث باستخدام اسم الطالب
-
                     </span>
-
                 </div>
-
             </div>
 
-
             <!-- Search Form -->
-
-            <form class="search-box"
-                  action="searchStudent"
-                  method="get"
-                  onsubmit="document.getElementById('selectedLanguage').value = localStorage.getItem('selectedLanguage') || 'ar';">
-
+            <form
+                class="search-box"
+                action="searchStudent"
+                method="get"
+                onsubmit="document.getElementById('selectedLanguage').value = localStorage.getItem('selectedLanguage') || 'ar';">
 
                 <input
                     type="text"
@@ -200,9 +143,7 @@
                     required
                 >
 
-
                 <!-- Current Language -->
-
                 <input
                     type="hidden"
                     id="selectedLanguage"
@@ -210,192 +151,120 @@
                     value="ar"
                 >
 
-
-                <button type="submit"
-                        class="search-button">
-
-                    <span data-ar="بحث"
-                          data-en="Search">
-
+                <button type="submit" class="search-button">
+                    <span data-ar="بحث" data-en="Search">
                         بحث
-
                     </span>
-
                 </button>
 
             </form>
 
         </section>
 
-
         <!-- Students Table -->
-
         <section class="content-card table-card">
 
             <div class="section-title">
 
                 <div>
-
-                    <h2 data-ar="قائمة الطلاب"
+                    <h2
+                        data-ar="قائمة الطلاب"
                         data-en="Students List">
-
                         قائمة الطلاب
-
                     </h2>
 
-                    <span data-ar="بيانات الطلاب المسجلة في النظام"
-                          data-en="Registered students in the system">
-
+                    <span
+                        data-ar="بيانات الطلاب المسجلة في النظام"
+                        data-en="Registered students in the system">
                         بيانات الطلاب المسجلة في النظام
-
                     </span>
-
                 </div>
 
-
-                <span class="record-count"
-                      id="recordCount"
-                      data-ar="الطلاب"
-                      data-en="Students">
-
+                <span
+                    class="record-count"
+                    id="recordCount"
+                    data-ar="الطلاب"
+                    data-en="Students">
                     الطلاب
-
                 </span>
 
             </div>
 
-
             <div class="table-wrapper">
-
                 <table>
 
                     <thead>
-
                         <tr>
-
-                            <th data-ar="الرقم"
-                                data-en="ID">
-
+                            <th data-ar="الرقم" data-en="ID">
                                 الرقم
-
                             </th>
 
-
-                            <th data-ar="اسم الطالب"
-                                data-en="Student Name">
-
+                            <th data-ar="اسم الطالب" data-en="Student Name">
                                 اسم الطالب
-
                             </th>
 
-
-                            <th data-ar="رقم الهوية"
-                                data-en="National ID">
-
+                            <th data-ar="رقم الهوية" data-en="National ID">
                                 رقم الهوية
-
                             </th>
 
-
-                            <th data-ar="العمر"
-                                data-en="Age">
-
+                            <th data-ar="العمر" data-en="Age">
                                 العمر
-
                             </th>
 
-
-                            <th data-ar="الدرجة"
-                                data-en="Grade">
-
+                            <th data-ar="الدرجة" data-en="Grade">
                                 الدرجة
-
                             </th>
 
-
-                            <th data-ar="الإجراءات"
-                                data-en="Actions">
-
+                            <th data-ar="الإجراءات" data-en="Actions">
                                 الإجراءات
-
                             </th>
-
                         </tr>
-
                     </thead>
 
-
-                 
-
                     <tbody id="studentsTableBody">
-
                     </tbody>
 
                 </table>
-
             </div>
 
         </section>
 
     </main>
 
-
     <!-- Footer -->
-
     <footer class="footer">
-
-        <span data-ar="نظام إدارة الطلاب والمقررات © 2026"
-              data-en="Student & Course Management System © 2026">
-
+        <span
+            data-ar="نظام إدارة الطلاب والمقررات © 2026"
+            data-en="Student & Course Management System © 2026">
             نظام إدارة الطلاب والمقررات © 2026
-
         </span>
-
     </footer>
 
-
     <!-- Language -->
-
     <script src="js/language.js?v=2"></script>
 
-
-    <!-- Success Message -->
-
+    <!-- Success Messages -->
     <script>
-
         // Get the parameters from the URL
-        const params =
-            new URLSearchParams(
-                window.location.search
-            );
-
+        const params = new URLSearchParams(
+            window.location.search
+        );
 
         // Check if the student was added successfully
         if (params.get("success") === "true") {
 
             // Get the current language
             const language =
-                localStorage.getItem(
-                    "selectedLanguage"
-                ) || "ar";
+                localStorage.getItem("selectedLanguage") || "ar";
 
-
-            // Show the message according to the language
+            // Show the success message
             if (language === "ar") {
-
-                alert(
-                    "تم إضافة الطالب بنجاح"
-                );
-
+                alert("تم إضافة الطالب بنجاح");
             } else {
-
-                alert(
-                    "Student added successfully"
-                );
+                alert("Student added successfully");
             }
 
-
-            // Remove success=true from the URL
+            // Remove the query parameter from the URL
             window.history.replaceState(
                 {},
                 document.title,
@@ -403,305 +272,163 @@
             );
         }
 
+        // Check if the student was updated successfully
+        if (params.get("updated") === "true") {
+
+            // Get the current language
+            const language =
+                localStorage.getItem("selectedLanguage") || "ar";
+
+            // Show the success message
+            if (language === "ar") {
+                alert("تم تعديل بيانات الطالب بنجاح");
+            } else {
+                alert("Student updated successfully");
+            }
+
+            // Remove the query parameter from the URL
+            window.history.replaceState(
+                {},
+                document.title,
+                "students.html"
+            );
+        }
     </script>
 
-
     <!-- Show Students -->
-
     <script>
-
-        // Get the tbody where students will be displayed
+        // Get the table body
         const studentsTableBody =
-            document.getElementById(
-                "studentsTableBody"
-            );
-
+            document.getElementById("studentsTableBody");
 
         // Get the record count element
         const recordCount =
-            document.getElementById(
-                "recordCount"
-            );
+            document.getElementById("recordCount");
 
-
-        // Send GET request to ShowStudentsServlet
-        //
-        // The Servlet will return JSON
+        // Request the students list from the Servlet
         fetch("showStudents")
 
-
-            // Convert the Response from JSON text
-            // into JavaScript data
+            // Check the response
             .then(function(response) {
 
-                // Check if the HTTP Response is successful
                 if (!response.ok) {
-
-                    throw new Error(
-                        "Failed to load students"
-                    );
+                    throw new Error("Failed to load students");
                 }
 
                 return response.json();
-
             })
 
-
-            // Receive the students list
+            // Display the students
             .then(function(students) {
 
-
-                // Remove any old rows
+                // Clear the table
                 studentsTableBody.innerHTML = "";
 
+                // Update the record count
+                const currentLanguage =
+                    localStorage.getItem("selectedLanguage") || "ar";
 
-                // Update the number of students
                 recordCount.textContent =
-                    students.length
-                    + " "
-                    + (
-                        localStorage.getItem(
-                            "selectedLanguage"
-                        ) === "en"
-                        ? "Students"
-                        : "الطلاب"
-                    );
+                    students.length + " " +
+                    (currentLanguage === "en" ? "Students" : "الطلاب");
 
-
-                // Loop through all students
+                // Create a row for each student
                 students.forEach(function(student) {
 
+                    const row = document.createElement("tr");
 
-                    // Create a new table row
-                    const row =
-                        document.createElement("tr");
-
-
-                    // =========================
                     // Student ID
-                    // =========================
-
-                    const idCell =
-                        document.createElement("td");
-
+                    const idCell = document.createElement("td");
                     idCell.textContent =
-                        student.id;
+                        student.id == null ? "" : student.id;
 
-
-                    // =========================
                     // Student Name
-                    // =========================
+                    const nameCell = document.createElement("td");
+                    nameCell.className = "student-name";
+                    nameCell.textContent = student.name;
 
-                    const nameCell =
-                        document.createElement("td");
-
-                    nameCell.className =
-                        "student-name";
-
-                    nameCell.textContent =
-                        student.name;
-
-
-                    // =========================
                     // National ID
-                    // =========================
+                    const nationalIdCell = document.createElement("td");
+                    nationalIdCell.textContent = student.nationalId;
 
-                    const nationalIdCell =
-                        document.createElement("td");
-
-                    nationalIdCell.textContent =
-                        student.nationalId;
-
-
-                    // =========================
                     // Age
-                    // =========================
+                    const ageCell = document.createElement("td");
+                    ageCell.textContent = student.age;
 
-                    const ageCell =
-                        document.createElement("td");
-
-                    ageCell.textContent =
-                        student.age;
-
-
-                    // =========================
                     // Grade
-                    // =========================
+                    const gradeCell = document.createElement("td");
+                    const gradeBadge = document.createElement("span");
 
-                    const gradeCell =
-                        document.createElement("td");
+                    gradeBadge.className = "grade-badge";
+                    gradeBadge.textContent = student.grade;
 
+                    gradeCell.appendChild(gradeBadge);
 
-                    // Create grade badge
-                    const gradeBadge =
-                        document.createElement("span");
-
-
-                    gradeBadge.className =
-                        "grade-badge";
-
-
-                    gradeBadge.textContent =
-                        student.grade;
-
-
-                    // Add badge to grade cell
-                    gradeCell.appendChild(
-                        gradeBadge
-                    );
-
-
-                    // =========================
                     // Actions
-                    // =========================
+                    const actionsCell = document.createElement("td");
+                    const actions = document.createElement("div");
 
-                    const actionsCell =
-                        document.createElement("td");
+                    actions.className = "actions";
 
-
-                    const actions =
-                        document.createElement("div");
-
-
-                    actions.className =
-                        "actions";
-
-
-                    // =========================
                     // Edit Button
-                    // =========================
+                    const editButton = document.createElement("button");
 
-                    const editButton =
-                        document.createElement("button");
-
-
-                    editButton.className =
-                        "action-btn edit";
-
-
-                    editButton.setAttribute(
-                        "data-ar",
-                        "تعديل"
-                    );
-
-
-                    editButton.setAttribute(
-                        "data-en",
-                        "Edit"
-                    );
-
+                    editButton.className = "action-btn edit";
+                    editButton.setAttribute("data-ar", "تعديل");
+                    editButton.setAttribute("data-en", "Edit");
 
                     editButton.textContent =
-                        localStorage.getItem(
-                            "selectedLanguage"
-                        ) === "en"
-                        ? "Edit"
-                        : "تعديل";
+                        currentLanguage === "en" ? "Edit" : "تعديل";
 
+                    editButton.addEventListener("click", function() {
 
-                    // =========================
+                        const editParams = new URLSearchParams({
+                            nationalId: student.nationalId,
+                            name: student.name,
+                            age: student.age,
+                            grade: student.grade
+                        });
+
+                        window.location.href =
+                            "update-student.html?" + editParams.toString();
+                    });
+
                     // Delete Button
-                    // =========================
+                    const deleteButton = document.createElement("button");
 
-                    const deleteButton =
-                        document.createElement("button");
-
-
-                    deleteButton.className =
-                        "action-btn delete";
-
-
-                    deleteButton.setAttribute(
-                        "data-ar",
-                        "حذف"
-                    );
-
-
-                    deleteButton.setAttribute(
-                        "data-en",
-                        "Delete"
-                    );
-
+                    deleteButton.className = "action-btn delete";
+                    deleteButton.setAttribute("data-ar", "حذف");
+                    deleteButton.setAttribute("data-en", "Delete");
 
                     deleteButton.textContent =
-                        localStorage.getItem(
-                            "selectedLanguage"
-                        ) === "en"
-                        ? "Delete"
-                        : "حذف";
+                        currentLanguage === "en" ? "Delete" : "حذف";
 
+                    // Add buttons to the actions container
+                    actions.appendChild(editButton);
+                    actions.appendChild(deleteButton);
 
-                    // Add buttons to actions
-                    actions.appendChild(
-                        editButton
-                    );
+                    // Add actions to the cell
+                    actionsCell.appendChild(actions);
 
-                    actions.appendChild(
-                        deleteButton
-                    );
+                    // Add cells to the row
+                    row.appendChild(idCell);
+                    row.appendChild(nameCell);
+                    row.appendChild(nationalIdCell);
+                    row.appendChild(ageCell);
+                    row.appendChild(gradeCell);
+                    row.appendChild(actionsCell);
 
-
-                    // Add actions to cell
-                    actionsCell.appendChild(
-                        actions
-                    );
-
-
-                    // =========================
-                    // Add Cells to Row
-                    // =========================
-
-                    row.appendChild(
-                        idCell
-                    );
-
-                    row.appendChild(
-                        nameCell
-                    );
-
-                    row.appendChild(
-                        nationalIdCell
-                    );
-
-                    row.appendChild(
-                        ageCell
-                    );
-
-                    row.appendChild(
-                        gradeCell
-                    );
-
-                    row.appendChild(
-                        actionsCell
-                    );
-
-
-                    // Add row to table
-                    studentsTableBody.appendChild(
-                        row
-                    );
-
+                    // Add the row to the table
+                    studentsTableBody.appendChild(row);
                 });
-
             })
 
-
-            // =========================
-            // Error Handling
-            // =========================
-
+            // Handle errors
             .catch(function(error) {
-
-                console.error(
-                    "Failed to load students:",
-                    error
-                );
-
+                console.error("Failed to load students:", error);
             });
-
     </script>
 
-
 </body>
-
 </html>
+```
